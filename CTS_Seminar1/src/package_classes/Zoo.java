@@ -3,7 +3,7 @@ package package_classes;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Zoo {
+public class Zoo implements ZooInterface{
 	private Zookeeper zookeeper;
 	private List<Animal> animals;
 	
