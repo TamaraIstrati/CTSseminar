@@ -6,11 +6,17 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class EleviReader {
-	public static List<Elev> readPupil(String file) throws FileNotFoundException {
-		Scanner input2 = new Scanner(new File(file));
+public class EleviReader extends IReader{
+	
+	public EleviReader(String filePath) {
+		super(filePath);
+		// TODO Auto-generated constructor stub
+	}
+
+	public List<Aplicant> readAplicants() throws FileNotFoundException {
+		Scanner input2 = new Scanner(new File(super.filePath));
 		input2.useDelimiter(",|\n");
-		List<Elev> elevi = new ArrayList<Elev>();
+		List<Aplicant> elevi = new ArrayList<>();
 
 		while (input2.hasNext()) {
 			String nume = input2.next();
