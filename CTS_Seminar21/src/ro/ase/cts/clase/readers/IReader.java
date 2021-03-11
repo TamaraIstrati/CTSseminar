@@ -1,8 +1,10 @@
-package ro.ase.cts.clase;
+package ro.ase.cts.clase.readers;
 
 import java.io.FileNotFoundException;
 import java.util.List;
 import java.util.Scanner;
+
+import ro.ase.cts.clase.Aplicant;
 
 public abstract class IReader {
 	protected String filePath;

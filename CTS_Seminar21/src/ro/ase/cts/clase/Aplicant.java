@@ -6,7 +6,7 @@ public abstract class Aplicant {
 	protected int varsta;
 	protected int punctaj;
 	protected int nr_proiecte;
-	protected String[] denumireProiect;
+	protected String[] denumiriProiecte;
 
 	public String getNume() {
 		return nume;
@@ -59,7 +59,7 @@ public abstract class Aplicant {
 		this.varsta = varsta;
 		this.punctaj = punctaj;
 		this.nr_proiecte = nr_proiecte;
-		this.denumireProiect = denumireProiect;
+		this.denumiriProiecte = denumireProiect;
 	}
 
 	public int getNr_proiecte() {
@@ -69,6 +69,8 @@ public abstract class Aplicant {
 
 	public void setVectorDenumiri(String[] denumireProiect, int nr_proiecte) {
 		this.nr_proiecte=nr_proiecte;
-		this.denumireProiect=denumireProiect;
+		this.denumiriProiecte=denumireProiect;
 	}
+	
+	public abstract float getSumaFinantare();
 }

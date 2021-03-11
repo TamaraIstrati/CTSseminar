@@ -1,10 +1,13 @@
-package ro.ase.cts.clase;
+package ro.ase.cts.clase.readers;
 
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+
+import ro.ase.cts.clase.Aplicant;
+import ro.ase.cts.clase.Student;
 
 public class StudentsReader extends IReader{
 	

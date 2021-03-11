@@ -4,9 +4,9 @@ import java.io.FileNotFoundException;
 import java.util.List;
 
 import ro.ase.cts.clase.Angajat;
-import ro.ase.cts.clase.AngajatiReader;
 import ro.ase.cts.clase.Aplicant;
-import ro.ase.cts.clase.IReader;
+import ro.ase.cts.clase.readers.AngajatiReader;
+import ro.ase.cts.clase.readers.IReader;
 
 public class Program {
 	
@@ -18,8 +18,10 @@ public class Program {
 		List<Aplicant> listaAplicanti;
 		try {
 			listaAplicanti = citesteAplicanti(new AngajatiReader("angajati.txt"));
-			for(Aplicant aplicant:listaAplicanti)
+			for(Aplicant aplicant:listaAplicanti) {
 				System.out.println(aplicant.toString());
+				System.out.println(aplicant.getSumaFinantare());
+			}
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
