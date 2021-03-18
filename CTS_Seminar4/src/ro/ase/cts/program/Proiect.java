@@ -1,5 +1,6 @@
 package ro.ase.cts.program;
 
+import ro.ase.cts.clase.Itinerar;
 import ro.ase.cts.clase.Presedinte;
 import ro.ase.cts.clase.PresedinteLazy;
 
@@ -23,6 +24,19 @@ public class Proiect {
 		
 		System.out.println(presedinteLazy1.toString());
 		System.out.println(presedinteLazy2.toString());
+		
+		//My Class
+		Itinerar itinerar1= Itinerar.getInstance("ASE", "Domiciliu", 6, 28.7f);
+		Itinerar itinerar2= Itinerar.getInstance("Bucuresti Mall", "Piata Unirii", 3, 18.5f);
+		
+		System.out.println(itinerar1.toString());
+		System.out.println(itinerar2.toString());//observam ca sunt primele instante
+		
+		itinerar1.setStartLocation("Casa Poporului");
+		itinerar2.setDistance(100);
+		
+		System.out.println(itinerar1.toString());
+		System.out.println(itinerar2.toString());//observam ca ambele itinerare sunt modif
 	}
 	
 }
