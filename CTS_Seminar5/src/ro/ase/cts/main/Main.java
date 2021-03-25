@@ -6,6 +6,7 @@ import ro.ase.cts.clase.FactoryInfirmier;
 import ro.ase.cts.clase.FactoryPersonal;
 import ro.ase.cts.clase.IFactory;
 import ro.ase.cts.clase.PersonalSpital;
+import ro.ase.cts.clase.Reteta;
 import ro.ase.cts.clase.TipPersonal;
 
 public class Main {
@@ -29,6 +30,13 @@ public class Main {
 		afisareInformatiiPersonalSpital(new FactoryBrancardier(), "Mihai");
 		
 		afisareInformatiiPersonalSpital(new FactoryInfirmier(), "Ion");
+		
+		//Prototype
+		Reteta reteta = new Reteta("Acid acetic", 250);
+		Reteta retetaClona = (Reteta) reteta.copiaza();
+	
+		System.out.println(reteta);
+		System.out.println(retetaClona);
 	}
 
 }
