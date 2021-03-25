@@ -1,6 +1,7 @@
 package package_main;
 
 import package_classes.Girafa;
+import package_classes.Zebra;
 import package_classes.Zoo;
 
 public class MainClass {
@@ -13,6 +14,12 @@ public class MainClass {
 		
 		zoo.addAnimal(girafa1);
 		zoo.addAnimal(girafa2);
+		
+		Zebra zebra1= new Zebra("Zebra1");
+		Zebra zebra2= new Zebra("Zebra2");
+		
+		zoo.addAnimal(zebra1);
+		zoo.addAnimal(zebra2);
 		
 		zoo.feedAllAnimals();
 	}
