@@ -7,7 +7,7 @@ import ro.ase.cts.builder.clase.RezervareBuilderV2;
 public class Main {
 
 	public static void main(String[] args) {
-		///Met 1
+		///Met 1 Build
 		Rezervare rezervare1;
 		Rezervare rezervare2;
 		
@@ -26,13 +26,15 @@ public class Main {
 		System.out.println(rezervare3);
 		System.out.println(rezervare4);
 		
-		///Met 2
+		///Met 2 Build
 		RezervareBuilderV2 rbv2 = new RezervareBuilderV2().setAreMancare(true).setAreBautura(true).setAreScaunErgonomic(true);
 		Rezervare rezervare5 = rbv2.setCodRezervare(140).build();
 		Rezervare rezervare6 = rbv2.setCodRezervare(150).build();
 		
 		System.out.println(rezervare5);
 		System.out.println(rezervare6);
+		
+		
 	}
 
 }
