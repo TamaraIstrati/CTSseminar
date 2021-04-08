@@ -14,6 +14,9 @@ public class FacadeClass {
 			System.out.println("Nu putem sa-i oferim creditul");
 		}
 		
+		///
+		
+		
 	}
 
 }
