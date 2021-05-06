@@ -1,4 +1,4 @@
-package ro.ase.acs.chainOfResponsibility.clase;
+package ro.ase.cts.chainOfResponsibility.clase;
 
 public class NotificatorSMS extends Notificator{
 

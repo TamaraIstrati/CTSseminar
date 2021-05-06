@@ -1,8 +1,8 @@
-package ro.ase.acs.chainOfResponsibility.main;
+package ro.ase.cts.chainOfResponsibility.main;
 
-import ro.ase.acs.chainOfResponsibility.clase.Client;
-import ro.ase.acs.chainOfResponsibility.clase.NotificatorEmail;
-import ro.ase.acs.chainOfResponsibility.clase.NotificatorSMS;
+import ro.ase.cts.chainOfResponsibility.clase.Client;
+import ro.ase.cts.chainOfResponsibility.clase.NotificatorEmail;
+import ro.ase.cts.chainOfResponsibility.clase.NotificatorSMS;
 
 public class Main {
 

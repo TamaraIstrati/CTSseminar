@@ -1,4 +1,4 @@
-package ro.ase.acs.chainOfResponsibility.clase;
+package ro.ase.cts.chainOfResponsibility.clase;
 
 public abstract class Notificator {
 	private Notificator nextNotificator;

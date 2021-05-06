@@ -1,4 +1,4 @@
-package ro.ase.acs.strategy.main;
+package ro.ase.cts.strategy.main;
 
 import ro.ase.cts.strategy.clase.Client;
 import ro.ase.cts.strategy.clase.PlataCard;
