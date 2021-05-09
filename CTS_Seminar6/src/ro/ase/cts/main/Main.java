@@ -19,6 +19,7 @@ public class Main {
 		
 		Rezervare rezervare3 = new Rezervare(102, true, false, true, true, "pop");
 		
+		//1 si 4 partajeaza memoria dar respectam DRY
 		Rezervare rezervare4 = rezervareBuilder.setCodRezervare(104).setAreMuzica(true).setAreScaun(true).build();;
 		
 		System.out.println(rezervare1);
@@ -29,6 +30,7 @@ public class Main {
 		///Met 2 Build
 		RezervareBuilderV2 rbv2 = new RezervareBuilderV2().setAreMancare(true).setAreBautura(true).setAreScaunErgonomic(true);
 		Rezervare rezervare5 = rbv2.setCodRezervare(140).build();
+		//nu partajeaza memoria, dar DRY nu se respecta
 		Rezervare rezervare6 = rbv2.setCodRezervare(150).build();
 		
 		System.out.println(rezervare5);

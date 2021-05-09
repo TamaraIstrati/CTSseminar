@@ -30,7 +30,7 @@ public class RezervareBuilder implements AbstractBuilder{
 	}
 	
 	public RezervareBuilder setAreBautura(boolean areBautura) {
-		rezervare.setAreBautura(areBautura);;;
+		rezervare.setAreBautura(areBautura);
 		return this;
 	}
 	
