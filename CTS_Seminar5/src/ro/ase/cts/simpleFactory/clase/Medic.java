@@ -4,7 +4,6 @@ public class Medic extends PersonalSpital{
 
 	public Medic(String nume) {
 		super(nume);
-		// TODO Auto-generated constructor stub
 	}
 
 	@Override

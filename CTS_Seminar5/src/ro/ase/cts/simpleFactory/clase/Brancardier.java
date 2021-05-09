@@ -4,7 +4,6 @@ public class Brancardier extends PersonalSpital{
 
 	public Brancardier(String nume) {
 		super(nume);
-		// TODO Auto-generated constructor stub
 	}
 
 	@Override
