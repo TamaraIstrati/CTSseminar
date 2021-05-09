@@ -13,7 +13,7 @@ public class Reteta implements PrototipAbstract{
 	
 	
 	private Reteta() {
-		//nu se mai fac validari
+		//nu se mai fac validari, deci dureaza mai putin 
 		super();
 	}
 
