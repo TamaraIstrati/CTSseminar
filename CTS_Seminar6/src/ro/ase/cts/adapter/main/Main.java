@@ -1,11 +1,11 @@
-package ro.ase.cts.main;
+package ro.ase.cts.adapter.main;
 
 import ro.ase.cts.adapter.clase.Bilet;
 import ro.ase.cts.adapter.clase.BiletAdapterClase;
 import ro.ase.cts.adapter.clase.BiletAdaptor;
 import ro.ase.cts.adapter.clase.IBiletOnline;
 
-public class MainAdaptor {
+public class Main {
 	
 	private static void rezervaSiAfiseazaBiletLaCasa(Bilet bilet) {
 		bilet.rezervare();
