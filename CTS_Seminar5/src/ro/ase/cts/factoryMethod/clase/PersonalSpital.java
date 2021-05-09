@@ -5,7 +5,6 @@ public abstract class PersonalSpital {
 
 	public PersonalSpital(String nume) {
 		this.nume=nume;
-		// TODO Auto-generated constructor stub
 	}
 
 	public String getNume() {

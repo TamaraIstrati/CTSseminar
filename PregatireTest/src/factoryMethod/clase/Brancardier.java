@@ -1,4 +1,4 @@
-package ro.ase.cts.factoryMethod.clase;
+package factoryMethod.clase;
 
 public class Brancardier extends PersonalSpital{
 
@@ -9,11 +9,10 @@ public class Brancardier extends PersonalSpital{
 	@Override
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
-		builder.append("Brancardier: ");
-		builder.append(super.getNume());
-		builder.append("\n");
+		builder.append("Brancardier [");
+		builder.append(super.toString());
+		builder.append("]");
 		return builder.toString();
 	}
 
-	
 }

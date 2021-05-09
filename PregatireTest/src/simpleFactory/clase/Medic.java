@@ -1,4 +1,4 @@
-package ro.ase.cts.factoryMethod.clase;
+package simpleFactory.clase;
 
 public class Medic extends PersonalSpital{
 
@@ -9,9 +9,10 @@ public class Medic extends PersonalSpital{
 	@Override
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
-		builder.append("Medic: ");
-		builder.append(super.getNume());
-		builder.append("\n");
+		builder.append("Medic [");
+		builder.append(super.toString());
+		builder.append("]");
 		return builder.toString();
 	}
+
 }
