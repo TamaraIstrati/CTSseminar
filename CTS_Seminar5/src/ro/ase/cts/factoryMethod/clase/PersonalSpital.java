@@ -1,4 +1,4 @@
-package ro.ase.cts.clase;
+package ro.ase.cts.factoryMethod.clase;
 
 public abstract class PersonalSpital {
 	private String nume;

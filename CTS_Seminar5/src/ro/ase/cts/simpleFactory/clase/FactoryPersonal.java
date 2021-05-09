@@ -1,4 +1,4 @@
-package ro.ase.cts.clase;
+package ro.ase.cts.simpleFactory.clase;
 
 public class FactoryPersonal {
 

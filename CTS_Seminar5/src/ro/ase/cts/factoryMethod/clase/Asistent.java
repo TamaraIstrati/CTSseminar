@@ -1,8 +1,8 @@
-package ro.ase.cts.clase;
+package ro.ase.cts.factoryMethod.clase;
 
-public class Brancardier extends PersonalSpital{
+public class Asistent extends PersonalSpital{
 
-	public Brancardier(String nume) {
+	public Asistent(String nume) {
 		super(nume);
 		// TODO Auto-generated constructor stub
 	}
@@ -10,11 +10,11 @@ public class Brancardier extends PersonalSpital{
 	@Override
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
-		builder.append("Brancardier: ");
+		builder.append("Asistent: ");
 		builder.append(super.getNume());
 		builder.append("\n");
 		return builder.toString();
 	}
 
 	
-}
+} 

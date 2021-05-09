@@ -14,13 +14,6 @@ public class PresedinteLazy {
 		this.mandat = mandat;
 	}
 	
-	private PresedinteLazy() {
-		super();
-		this.nume = "Putin";
-		this.varsta = 68;
-		this.mandat = 10;
-	}
-	
 	public static synchronized PresedinteLazy getInstance(String nume, int varsta, int mandat) {
 		if(instance == null) {
 			instance = new PresedinteLazy(nume, varsta, mandat);

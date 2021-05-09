@@ -1,19 +1,20 @@
-package ro.ase.cts.clase;
+package ro.ase.cts.simpleFactory.clase;
 
-public class Infirmier extends PersonalSpital{
+public class Asistent extends PersonalSpital{
 
-	public Infirmier(String nume) {
+	public Asistent(String nume) {
 		super(nume);
+		// TODO Auto-generated constructor stub
 	}
 
 	@Override
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
-		builder.append("Infirmier: ");
+		builder.append("Asistent: ");
 		builder.append(super.getNume());
 		builder.append("\n");
 		return builder.toString();
 	}
 
 	
-}
+} 

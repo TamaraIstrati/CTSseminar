@@ -1,13 +1,13 @@
-package ro.ase.cts.main;
+package ro.ase.cts.simpleFactory.main;
 
-import ro.ase.cts.clase.FactoryAsistent;
-import ro.ase.cts.clase.FactoryBrancardier;
-import ro.ase.cts.clase.FactoryInfirmier;
-import ro.ase.cts.clase.FactoryPersonal;
-import ro.ase.cts.clase.IFactory;
-import ro.ase.cts.clase.PersonalSpital;
-import ro.ase.cts.clase.Reteta;
-import ro.ase.cts.clase.TipPersonal;
+import ro.ase.cts.prototype.clase.Reteta;
+import ro.ase.cts.simpleFactory.clase.FactoryAsistent;
+import ro.ase.cts.simpleFactory.clase.FactoryBrancardier;
+import ro.ase.cts.simpleFactory.clase.FactoryInfirmier;
+import ro.ase.cts.simpleFactory.clase.FactoryPersonal;
+import ro.ase.cts.simpleFactory.clase.IFactory;
+import ro.ase.cts.simpleFactory.clase.PersonalSpital;
+import ro.ase.cts.simpleFactory.clase.TipPersonal;
 
 public class Main {
 	
@@ -30,13 +30,7 @@ public class Main {
 		afisareInformatiiPersonalSpital(new FactoryBrancardier(), "Mihai");
 		
 		afisareInformatiiPersonalSpital(new FactoryInfirmier(), "Ion");
-		
-		//Prototype
-		Reteta reteta = new Reteta("Acid acetic", 250);
-		Reteta retetaClona = (Reteta) reteta.copiaza();
-	
-		System.out.println(reteta);
-		System.out.println(retetaClona);
+
 	}
 
 }

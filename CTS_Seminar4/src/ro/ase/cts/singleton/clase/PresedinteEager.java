@@ -5,13 +5,6 @@ public class PresedinteEager {
 	private int varsta;
 	private int mandat;
 	
-	private PresedinteEager(String nume, int varsta, int mandat) {
-		super();
-		this.nume = nume;
-		this.varsta = varsta;
-		this.mandat = mandat;
-	}
-	
 	private PresedinteEager() {
 		super();
 		this.nume = "Putin";

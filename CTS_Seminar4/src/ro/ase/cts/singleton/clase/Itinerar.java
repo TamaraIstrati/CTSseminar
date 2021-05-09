@@ -15,14 +15,6 @@ public class Itinerar {
 		this.intermadiarLocations = intermadiarLocations;
 		this.distance = distanta;
 	}
-
-	private Itinerar() {
-		super();
-		this.startLocation = "ASE";
-		this.destinationLocation = "Domiciliu";
-		this.intermadiarLocations = 4;
-		this.distance = 15.5f;
-	}
 	
 	public static synchronized Itinerar getInstance(String startLocation, String destinationLocation, int intermadiarLocations, float distanta) {
 		if(instance == null) {

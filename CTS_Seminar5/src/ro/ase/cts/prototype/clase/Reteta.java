@@ -1,4 +1,4 @@
-package ro.ase.cts.clase;
+package ro.ase.cts.prototype.clase;
 
 public class Reteta implements PrototipAbstract{
 	private String denumireSolutie;
