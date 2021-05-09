@@ -1,4 +1,4 @@
-package ro.ase.cts.clase;
+package ro.ase.cts.singleton.clase;
 
 public class PresedinteLazy {
 	private String nume;
@@ -54,7 +54,4 @@ public class PresedinteLazy {
 		this.mandat = mandat;
 	}
 
-	public static void setInstance(PresedinteLazy instance) {
-		PresedinteLazy.instance = instance;
-	}
 }

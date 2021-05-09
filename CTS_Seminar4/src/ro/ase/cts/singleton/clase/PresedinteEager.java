@@ -1,18 +1,18 @@
-package ro.ase.cts.clase;
+package ro.ase.cts.singleton.clase;
 
-public class Presedinte {
+public class PresedinteEager {
 	private String nume;
 	private int varsta;
 	private int mandat;
 	
-	private Presedinte(String nume, int varsta, int mandat) {
+	private PresedinteEager(String nume, int varsta, int mandat) {
 		super();
 		this.nume = nume;
 		this.varsta = varsta;
 		this.mandat = mandat;
 	}
 	
-	private Presedinte() {
+	private PresedinteEager() {
 		super();
 		this.nume = "Putin";
 		this.varsta = 68;
@@ -20,9 +20,9 @@ public class Presedinte {
 	}
 	
 	//private pentru ca public ar permite accesul prin numele clasei, deci obiectul nu mai e necesar
-	private static Presedinte instance = new Presedinte();
+	private static PresedinteEager instance = new PresedinteEager();
 	
-	public static Presedinte getInstanta() {
+	public static PresedinteEager getInstanta() {
 		return instance;
 	}
 
@@ -50,10 +50,5 @@ public class Presedinte {
 	public void setMandat(int mandat) {
 		this.mandat = mandat;
 	}
-
-	public static void setInstance(Presedinte instance) {
-		Presedinte.instance = instance;
-	}
-	
 	
 }

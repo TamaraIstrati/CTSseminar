@@ -1,15 +1,15 @@
-package ro.ase.cts.program;
+package ro.ase.cts.singleton.main;
 
-import ro.ase.cts.clase.Itinerar;
-import ro.ase.cts.clase.Presedinte;
-import ro.ase.cts.clase.PresedinteLazy;
+import ro.ase.cts.singleton.clase.Itinerar;
+import ro.ase.cts.singleton.clase.PresedinteEager;
+import ro.ase.cts.singleton.clase.PresedinteLazy;
 
-public class Proiect {
+public class Main {
 	
 	public static void main(String[] args) {
 		//Eager
-		Presedinte presedinte1 = Presedinte.getInstanta();
-		Presedinte presedinte2 = Presedinte.getInstanta();
+		PresedinteEager presedinte1 = PresedinteEager.getInstanta();
+		PresedinteEager presedinte2 = PresedinteEager.getInstanta();
 		
 		presedinte1.setNume("Basescu");
 		presedinte2.setMandat(2);
