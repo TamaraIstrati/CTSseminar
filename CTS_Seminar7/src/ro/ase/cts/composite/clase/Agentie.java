@@ -27,13 +27,11 @@ public class Agentie implements ISediu{
 
 	@Override
 	public void adaugaNod(ISediu sediu) {
-		// TODO Auto-generated method stub
 		listaSedii.add(sediu);
 	}
 
 	@Override
 	public void stergeNod(ISediu sediu) {
-		// TODO Auto-generated method stub
 		listaSedii.remove(sediu);
 	}
 

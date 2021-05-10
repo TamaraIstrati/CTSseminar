@@ -13,10 +13,6 @@ public class FacadeClass {
 		} else {
 			System.out.println("Nu putem sa-i oferim creditul");
 		}
-		
-		///
-		
-		
 	}
 
 }
