@@ -4,6 +4,7 @@ public class Client {
 	private String nume;
 	private String telefon;
 	private String email;
+	
 	public String getNume() {
 		return nume;
 	}
@@ -22,6 +23,7 @@ public class Client {
 	public void setEmail(String email) {
 		this.email = email;
 	}
+	
 	public Client(String nume, String telefon, String email) {
 		super();
 		this.nume = nume;
