@@ -8,7 +8,6 @@ import ro.ase.cts.decorator.clase.NotaDePlata;
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		
 		NotaDePlata notaDePlata = new NotaDePlata(55);
 		notaDePlata.printeaza();

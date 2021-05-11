@@ -6,7 +6,6 @@ public class DecoratorCuLaMultiAni extends DecoratorAbstract{
 	
 	public DecoratorCuLaMultiAni(INota nota) {
 		super(nota);
-		// TODO Auto-generated constructor stub
 	}
 
 	@Override
@@ -16,7 +15,6 @@ public class DecoratorCuLaMultiAni extends DecoratorAbstract{
 
 	@Override
 	public void printeaza() {
-		// TODO Auto-generated method stub
 		super.printeaza();
 		System.out.println("La multi ani!");
 	}
