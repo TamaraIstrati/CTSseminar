@@ -3,6 +3,7 @@ package builder.main;
 import builder.clase.AbstractBuilder;
 import builder.clase.BuilderRezervareV1;
 import builder.clase.BuilderRezervareV2;
+import builder.clase.Product;
 import builder.clase.Rezervare;
 
 public class Main {
@@ -23,6 +24,17 @@ public class Main {
 		
 		System.out.println(r3);
 		System.out.println(r4);
+		
+		System.out.println("---------");
+		//inner
+		Product product3 = new Product.ProductBuilder()
+				.addName("milk")
+				.addBarCode(12345)
+				.addQuantity(23)
+				.addIsVegetarianFriendly(true)
+				.addIsGlutenFree(true)
+				.build();
+		System.out.println(product3);
 	}
 
 }

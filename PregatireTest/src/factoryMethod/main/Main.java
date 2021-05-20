@@ -10,6 +10,7 @@ public class Main {
 		PersonalSpital personal = factory.getPersonal(nume);
 		System.out.println(personal);
 	}
+	
 	public static void main(String[] args) {
 		getDetaliiPersonal(new FactoryMedic(), "Ioana");
 		getDetaliiPersonal(new FactoryBrancardier(), "Ion");
