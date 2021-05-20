@@ -13,8 +13,8 @@ public class StudentTests {
 		String nume = "Costica";
 		Student student = new Student(nume);
 		
-		assertEquals(nume, student.getNume());
-		assertNotNull(student.getNote());
+		assertEquals("Nume neinitializat" ,nume, student.getNume());
+		assertNotNull("Note neinitializat", student.getNote());
 	}
 
 	@Test
@@ -84,5 +84,43 @@ public class StudentTests {
 		student.adaugaNota(8);
 		student.adaugaNota(6);
 		assertFalse(student.areRestante());
+	}
+	
+	//EXCEPTII
+	
+	@Test
+	public void testGetNotaExceptie() {
+		Student student = new Student();
+		student.adaugaNota(8);
+		student.adaugaNota(6);
+		
+		try {
+			student.getNota(4);
+			fail("Exceptia nu a fost aruncata.");
+		} catch (IndexOutOfBoundsException e) {
+			
+		} catch (Exception e) {
+			fail("Exceptia nu a fost aruncata.");
+		}
+	}
+	
+	@Test(expected = IndexOutOfBoundsException.class)
+	public void testGetNotaExceptieV4() {
+		Student student = new Student();
+		student.adaugaNota(8);
+		student.adaugaNota(6);
+		
+		student.getNota(4);
+	}
+	
+	@Test
+	public void testGetNotaExceptieV5() {
+		Student student = new Student();
+		student.adaugaNota(8);
+		student.adaugaNota(6);
+		
+		assertThrows(IndexOutOfBoundsException.class, () -> {
+			student.getNota(5);
+		});
 	}
 }
